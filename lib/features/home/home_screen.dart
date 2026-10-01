@@ -19,7 +19,20 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: NavigationBar(
         selectedIndex: 0,
         onDestinationSelected: (index) {
-          if (index == 1) context.push('/gopica');
+          switch (index) {
+            case 0:
+              context.go('/');
+              break;
+            case 1:
+              context.push('/gopica');
+              break;
+            case 2:
+              context.push('/history');
+              break;
+            case 3:
+              context.push('/profile');
+              break;
+          }
         },
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
