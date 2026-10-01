@@ -5,21 +5,25 @@ final apiServiceProvider = Provider((ref) => ApiService());
 
 class ApiService {
   final Dio _dio = Dio(BaseOptions(
-    // Update to your production API URL
-    baseUrl: 'https://heysamay-62a2a.web.app/api_v1/api/gopica',
+    baseUrl: 'https://heysamay.in', // Replace with actual backend
     connectTimeout: const Duration(seconds: 10),
+    receiveTimeout: const Duration(seconds: 10),
   ));
 
-  Future<Map<String, dynamic>> sendCommand(String command) async {
+  Future<String> processGopicaCommand(String input) async {
     try {
-      // Note: Add proper Bearer token authentication here when integrating HeySamay Auth
-      final response = await _dio.post('/command', data: {
-        'command': command,
-        'persona': 'prime'
-      });
-      return response.data;
+      // Simulating network delay for now since backend isn't fully defined
+      await Future.delayed(const Duration(seconds: 2));
+      
+      // Real API Call would look like this:
+      // final response = await _dio.post('/api/gopica/process', data: {'command': input});
+      // return response.data['result'];
+      
+      return "Processed result for: $input\n\nThis is a mock response from the Gopica API.";
+    } on DioException catch (e) {
+      throw Exception('Network error: ${e.message}');
     } catch (e) {
-      throw Exception('Failed to send command: $e');
+      throw Exception('Failed to process request. Please try again.');
     }
   }
 }
