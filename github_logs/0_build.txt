@@ -1,0 +1,281 @@
+﻿2026-10-01T18:55:22.2809121Z Current runner version: '2.337.0'
+2026-10-01T18:55:22.2849494Z ##[group]Runner Image Provisioner
+2026-10-01T18:55:22.2851289Z Hosted Compute Agent
+2026-10-01T18:55:22.2852532Z Version: 20260901.588
+2026-10-01T18:55:22.2853793Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-01T18:55:22.2855153Z Build Date: 2026-09-01T19:56:44Z
+2026-10-01T18:55:22.2856573Z Worker ID: {dac7e737-b517-4a80-b2a7-9a6e6b6cf77b}
+2026-10-01T18:55:22.2857882Z Azure Region: eastus
+2026-10-01T18:55:22.2859038Z ##[endgroup]
+2026-10-01T18:55:22.2861896Z ##[group]Operating System
+2026-10-01T18:55:22.2863183Z Ubuntu
+2026-10-01T18:55:22.2864061Z 24.04.5
+2026-10-01T18:55:22.2864878Z LTS
+2026-10-01T18:55:22.2865824Z ##[endgroup]
+2026-10-01T18:55:22.2866867Z ##[group]Runner Image
+2026-10-01T18:55:22.2867978Z Image: ubuntu-24.04
+2026-10-01T18:55:22.2868940Z Version: 20260927.320.1
+2026-10-01T18:55:22.2871597Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-01T18:55:22.2874490Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-01T18:55:22.2876479Z ##[endgroup]
+2026-10-01T18:55:22.2878713Z ##[group]GITHUB_TOKEN Permissions
+2026-10-01T18:55:22.2881990Z Contents: read
+2026-10-01T18:55:22.2883025Z Metadata: read
+2026-10-01T18:55:22.2884258Z Packages: read
+2026-10-01T18:55:22.2885255Z ##[endgroup]
+2026-10-01T18:55:22.2888551Z Secret source: Actions
+2026-10-01T18:55:22.2890163Z Cache mode: write
+2026-10-01T18:55:22.2891882Z Prepare workflow directory
+2026-10-01T18:55:22.3387351Z Prepare all required actions
+2026-10-01T18:55:22.3461920Z Getting action download info
+2026-10-01T18:55:22.5628169Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-01T18:55:22.6938087Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-01T18:55:22.9488966Z Download action repository 'subosito/flutter-action@v2' (SHA:1a449444c387b1966244ae4d4f8c696479add0b2)
+2026-10-01T18:55:23.0457103Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-01T18:55:23.2758902Z Getting action download info
+2026-10-01T18:55:23.3972153Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-10-01T18:55:23.5871457Z Complete job name: build
+2026-10-01T18:55:23.6644452Z ##[group]Run actions/checkout@v4
+2026-10-01T18:55:23.6645344Z with:
+2026-10-01T18:55:23.6645803Z   repository: sanjaynaiswal/gopica-app
+2026-10-01T18:55:23.6649677Z   token: ***
+2026-10-01T18:55:23.6650105Z   ssh-strict: true
+2026-10-01T18:55:23.6650897Z   ssh-user: git
+2026-10-01T18:55:23.6651344Z   persist-credentials: true
+2026-10-01T18:55:23.6651837Z   clean: true
+2026-10-01T18:55:23.6652283Z   sparse-checkout-cone-mode: true
+2026-10-01T18:55:23.6652821Z   fetch-depth: 1
+2026-10-01T18:55:23.6653239Z   fetch-tags: false
+2026-10-01T18:55:23.6653694Z   show-progress: true
+2026-10-01T18:55:23.6654166Z   lfs: false
+2026-10-01T18:55:23.6654576Z   submodules: false
+2026-10-01T18:55:23.6655013Z   set-safe-directory: true
+2026-10-01T18:55:23.6655527Z   allow-unsafe-pr-checkout: false
+2026-10-01T18:55:23.6656511Z ##[endgroup]
+2026-10-01T18:55:23.7737026Z Syncing repository: sanjaynaiswal/gopica-app
+2026-10-01T18:55:23.7739613Z ##[group]Getting Git version info
+2026-10-01T18:55:23.7741180Z Working directory is '/home/runner/work/gopica-app/gopica-app'
+2026-10-01T18:55:23.7742857Z [command]/usr/bin/git version
+2026-10-01T18:55:23.7816919Z git version 2.55.0
+2026-10-01T18:55:23.7850921Z ##[endgroup]
+2026-10-01T18:55:23.7859708Z Temporarily overriding HOME='/home/runner/work/_temp/e0fa0e32-a120-49b2-97c6-f0a73220c857' before making global git config changes
+2026-10-01T18:55:23.7862553Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-01T18:55:23.7866230Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gopica-app/gopica-app
+2026-10-01T18:55:23.7919767Z Deleting the contents of '/home/runner/work/gopica-app/gopica-app'
+2026-10-01T18:55:23.7924223Z ##[group]Initializing the repository
+2026-10-01T18:55:23.7928078Z [command]/usr/bin/git init /home/runner/work/gopica-app/gopica-app
+2026-10-01T18:55:23.8069898Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-01T18:55:23.8071517Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-01T18:55:23.8072619Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-01T18:55:23.8073461Z hint: call:
+2026-10-01T18:55:23.8073909Z hint:
+2026-10-01T18:55:23.8074499Z hint: 	git config --global init.defaultBranch <name>
+2026-10-01T18:55:23.8075202Z hint:
+2026-10-01T18:55:23.8075907Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-01T18:55:23.8076983Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-01T18:55:23.8077784Z hint:
+2026-10-01T18:55:23.8078241Z hint: 	git branch -m <name>
+2026-10-01T18:55:23.8078746Z hint:
+2026-10-01T18:55:23.8079404Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-01T18:55:23.8084349Z Initialized empty Git repository in /home/runner/work/gopica-app/gopica-app/.git/
+2026-10-01T18:55:23.8098850Z [command]/usr/bin/git remote add origin https://github.com/sanjaynaiswal/gopica-app
+2026-10-01T18:55:23.8151729Z ##[endgroup]
+2026-10-01T18:55:23.8152955Z ##[group]Disabling automatic garbage collection
+2026-10-01T18:55:23.8155800Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-01T18:55:23.8188956Z ##[endgroup]
+2026-10-01T18:55:23.8190088Z ##[group]Setting up auth
+2026-10-01T18:55:23.8196667Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-01T18:55:23.8228767Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-01T18:55:23.8704586Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-01T18:55:23.8745518Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-01T18:55:23.8978822Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-01T18:55:23.9018411Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-01T18:55:23.9245299Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-01T18:55:23.9285336Z ##[endgroup]
+2026-10-01T18:55:23.9286228Z ##[group]Fetching the repository
+2026-10-01T18:55:23.9295481Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +39e219c5b833469d950556b21e5aafb4a7ed0cbf:refs/remotes/origin/main
+2026-10-01T18:55:24.1945044Z From https://github.com/sanjaynaiswal/gopica-app
+2026-10-01T18:55:24.1947976Z  * [new ref]         39e219c5b833469d950556b21e5aafb4a7ed0cbf -> origin/main
+2026-10-01T18:55:24.1952722Z ##[endgroup]
+2026-10-01T18:55:24.1954174Z ##[group]Determining the checkout info
+2026-10-01T18:55:24.1956478Z ##[endgroup]
+2026-10-01T18:55:24.1957843Z [command]/usr/bin/git sparse-checkout disable
+2026-10-01T18:55:24.2012990Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-01T18:55:24.2048378Z ##[group]Checking out the ref
+2026-10-01T18:55:24.2053587Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-01T18:55:24.2127314Z Switched to a new branch 'main'
+2026-10-01T18:55:24.2134954Z branch 'main' set up to track 'origin/main'.
+2026-10-01T18:55:24.2140754Z ##[endgroup]
+2026-10-01T18:55:24.2182834Z [command]/usr/bin/git log -1 --format=%H
+2026-10-01T18:55:24.2209730Z 39e219c5b833469d950556b21e5aafb4a7ed0cbf
+2026-10-01T18:55:24.2683771Z ##[group]Run actions/setup-java@v4
+2026-10-01T18:55:24.2684982Z with:
+2026-10-01T18:55:24.2685860Z   distribution: zulu
+2026-10-01T18:55:24.2686846Z   java-version: 17
+2026-10-01T18:55:24.2687827Z   java-package: jdk
+2026-10-01T18:55:24.2688791Z   check-latest: false
+2026-10-01T18:55:24.2689777Z   server-id: github
+2026-10-01T18:55:24.2690990Z   server-username: GITHUB_ACTOR
+2026-10-01T18:55:24.2692160Z   server-password: GITHUB_TOKEN
+2026-10-01T18:55:24.2693321Z   overwrite-settings: true
+2026-10-01T18:55:24.2694410Z   job-status: success
+2026-10-01T18:55:24.2704405Z   token: ***
+2026-10-01T18:55:24.2705333Z ##[endgroup]
+2026-10-01T18:55:24.4471919Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-01T18:55:24.4491067Z ##[group]Installed distributions
+2026-10-01T18:55:24.4493301Z Trying to resolve the latest version from remote
+2026-10-01T18:55:24.4596356Z (node:2362) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-01T18:55:24.4601474Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-01T18:55:24.5252640Z Resolved latest version as 17.0.20+8
+2026-10-01T18:55:24.5254395Z Trying to download...
+2026-10-01T18:55:24.5256589Z Downloading Java 17.0.20+8 (Zulu) from https://cdn.azul.com/zulu/bin/zulu17.68.19-ca-crac-jdk17.0.20-linux_x64.tar.gz ...
+2026-10-01T18:55:28.8655426Z Extracting Java archive...
+2026-10-01T18:55:28.8803984Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/a1c4c190-cf15-4a41-b273-487e35a3102b -f /home/runner/work/_temp/782fb975-63a8-49f2-91ce-36bab6a62331
+2026-10-01T18:55:31.6661492Z Java 17.0.20+8 was downloaded
+2026-10-01T18:55:31.6662113Z Setting Java 17.0.20+8 as the default
+2026-10-01T18:55:31.6671265Z Creating toolchains.xml for JDK version 17 from zulu
+2026-10-01T18:55:31.6752273Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-01T18:55:31.6771560Z 
+2026-10-01T18:55:31.6771810Z Java configuration:
+2026-10-01T18:55:31.6772343Z   Distribution: zulu
+2026-10-01T18:55:31.6772829Z   Version: 17.0.20+8
+2026-10-01T18:55:31.6773377Z   Path: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.6773841Z 
+2026-10-01T18:55:31.6774553Z ##[endgroup]
+2026-10-01T18:55:31.6796222Z Creating settings.xml with server-id: github
+2026-10-01T18:55:31.6796999Z Writing to /home/runner/.m2/settings.xml
+2026-10-01T18:55:31.7123464Z ##[group]Run subosito/flutter-action@v2
+2026-10-01T18:55:31.7123790Z with:
+2026-10-01T18:55:31.7124002Z   flutter-version: 3.24.3
+2026-10-01T18:55:31.7124239Z   channel: stable
+2026-10-01T18:55:31.7124463Z   architecture: X64
+2026-10-01T18:55:31.7124679Z   cache: false
+2026-10-01T18:55:31.7124893Z   pub-cache-path: default
+2026-10-01T18:55:31.7125126Z   dry-run: false
+2026-10-01T18:55:31.7125401Z   git-source: https://github.com/flutter/flutter.git
+2026-10-01T18:55:31.7125715Z env:
+2026-10-01T18:55:31.7125998Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.7126405Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.7126754Z ##[endgroup]
+2026-10-01T18:55:31.7189212Z ##[start-action display=Make yq tool available on Windows runners;id=__subosito_flutter-action.__run]
+2026-10-01T18:55:31.7201180Z ##[end-action id=__subosito_flutter-action.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-01T18:55:31.7203520Z ##[start-action display=Make setup script executable;id=__subosito_flutter-action.__run_2]
+2026-10-01T18:55:31.7239001Z ##[group]Run chmod +x "$GITHUB_ACTION_PATH/setup.sh"
+2026-10-01T18:55:31.7239465Z [36;1mchmod +x "$GITHUB_ACTION_PATH/setup.sh"[0m
+2026-10-01T18:55:31.8509109Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-01T18:55:31.8509708Z env:
+2026-10-01T18:55:31.8510178Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.8511073Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.8511907Z ##[endgroup]
+2026-10-01T18:55:31.8654975Z ##[end-action id=__subosito_flutter-action.__run_2;outcome=success;conclusion=success;duration_ms=145]
+2026-10-01T18:55:31.8657671Z ##[start-action display=Set action inputs;id=__subosito_flutter-action.flutter-action]
+2026-10-01T18:55:31.8698103Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh -p \
+2026-10-01T18:55:31.8698505Z [36;1m$GITHUB_ACTION_PATH/setup.sh -p \[0m
+2026-10-01T18:55:31.8698829Z [36;1m  -n '3.24.3' \[0m
+2026-10-01T18:55:31.8699073Z [36;1m  -f '' \[0m
+2026-10-01T18:55:31.8699285Z [36;1m  -a 'X64' \[0m
+2026-10-01T18:55:31.8699509Z [36;1m  -k '' \[0m
+2026-10-01T18:55:31.8699711Z [36;1m  -c '' \[0m
+2026-10-01T18:55:31.8699916Z [36;1m  -l '' \[0m
+2026-10-01T18:55:31.8700131Z [36;1m  -d 'default' \[0m
+2026-10-01T18:55:31.8700800Z [36;1m  -g 'https://github.com/flutter/flutter.git' \[0m
+2026-10-01T18:55:31.8701144Z [36;1m  stable[0m
+2026-10-01T18:55:31.8760206Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-01T18:55:31.8760886Z env:
+2026-10-01T18:55:31.8761186Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.8761665Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.8762068Z ##[endgroup]
+2026-10-01T18:55:32.0444563Z ##[end-action id=__subosito_flutter-action.flutter-action;outcome=success;conclusion=success;duration_ms=178]
+2026-10-01T18:55:32.0449791Z ##[start-action display=Cache Flutter;id=__subosito_flutter-action.cache-flutter]
+2026-10-01T18:55:32.0455302Z ##[end-action id=__subosito_flutter-action.cache-flutter;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-01T18:55:32.0457415Z ##[start-action display=Cache pub dependencies;id=__subosito_flutter-action.cache-pub]
+2026-10-01T18:55:32.0464263Z ##[end-action id=__subosito_flutter-action.cache-pub;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-01T18:55:32.0466260Z ##[start-action display=Run setup script;id=__subosito_flutter-action.__run_3]
+2026-10-01T18:55:32.0502427Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh \
+2026-10-01T18:55:32.0502789Z [36;1m$GITHUB_ACTION_PATH/setup.sh \[0m
+2026-10-01T18:55:32.0503079Z [36;1m  -n '3.24.3' \[0m
+2026-10-01T18:55:32.0503323Z [36;1m  -a 'x64' \[0m
+2026-10-01T18:55:32.0503650Z [36;1m  -c '/opt/hostedtoolcache/flutter/stable-3.24.3-x64' \[0m
+2026-10-01T18:55:32.0504025Z [36;1m  -d '/home/runner/.pub-cache' \[0m
+2026-10-01T18:55:32.0504503Z [36;1m  stable[0m
+2026-10-01T18:55:32.0570888Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-01T18:55:32.0571289Z env:
+2026-10-01T18:55:32.0571591Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:32.0572061Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:32.0572450Z ##[endgroup]
+2026-10-01T18:55:32.2145094Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-10-01T18:55:32.2146467Z                                  Dload  Upload   Total   Spent    Left  Speed
+2026-10-01T18:55:32.2147309Z 
+2026-10-01T18:55:32.5103310Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-10-01T18:55:33.5103721Z   7  659M    7 49.1M    0     0   166M      0  0:00:03 --:--:--  0:00:03  166M
+2026-10-01T18:55:34.5101679Z  40  659M   40  268M    0     0   207M      0  0:00:03  0:00:01  0:00:02  207M
+2026-10-01T18:55:35.5238391Z  71  659M   71  469M    0     0   204M      0  0:00:03  0:00:02  0:00:01  204M
+2026-10-01T18:55:35.9222298Z  92  659M   92  608M    0     0   183M      0  0:00:03  0:00:03 --:--:--  183M
+2026-10-01T18:55:35.9223143Z 100  659M  100  659M    0     0   177M      0  0:00:03  0:00:03 --:--:--  177M
+2026-10-01T18:56:02.2232115Z ##[end-action id=__subosito_flutter-action.__run_3;outcome=success;conclusion=success;duration_ms=30176]
+2026-10-01T18:56:02.2298474Z ##[group]Run flutter create --platforms android .
+2026-10-01T18:56:02.2298889Z [36;1mflutter create --platforms android .[0m
+2026-10-01T18:56:02.2299356Z [36;1mrm -rf test/[0m
+2026-10-01T18:56:02.2364541Z shell: /usr/bin/bash -e {0}
+2026-10-01T18:56:02.2364802Z env:
+2026-10-01T18:56:02.2365090Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:56:02.2365538Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:56:02.2366008Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.24.3-x64/flutter
+2026-10-01T18:56:02.2366398Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-01T18:56:02.2366665Z ##[endgroup]
+2026-10-01T18:56:02.6802900Z 
+2026-10-01T18:56:02.6817567Z   ╔════════════════════════════════════════════════════════════════════════════╗
+2026-10-01T18:56:02.6818920Z   ║                 Welcome to Flutter! - https://flutter.dev                  ║
+2026-10-01T18:56:02.6819930Z   ║                                                                            ║
+2026-10-01T18:56:02.6821301Z   ║ The Flutter tool uses Google Analytics to anonymously report feature usage ║
+2026-10-01T18:56:02.6822891Z   ║ statistics and basic crash reports. This data is used to help improve      ║
+2026-10-01T18:56:02.6824369Z   ║ Flutter tools over time.                                                   ║
+2026-10-01T18:56:02.6825709Z   ║                                                                            ║
+2026-10-01T18:56:02.6827041Z   ║ Flutter tool analytics are not sent on the very first run. To disable      ║
+2026-10-01T18:56:02.6828539Z   ║ reporting, type 'flutter config --no-analytics'. To display the current    ║
+2026-10-01T18:56:02.6830035Z   ║ setting, type 'flutter config'. If you opt out of analytics, an opt-out    ║
+2026-10-01T18:56:02.6831759Z   ║ event will be sent, and then no further information will be sent by the    ║
+2026-10-01T18:56:02.6833184Z   ║ Flutter tool.                                                              ║
+2026-10-01T18:56:02.6834311Z   ║                                                                            ║
+2026-10-01T18:56:02.6835681Z   ║ By downloading the Flutter SDK, you agree to the Google Terms of Service.  ║
+2026-10-01T18:56:02.6837140Z   ║ The Google Privacy Policy describes how data is handled in this service.   ║
+2026-10-01T18:56:02.6838511Z   ║                                                                            ║
+2026-10-01T18:56:02.6839815Z   ║ Moreover, Flutter includes the Dart SDK, which may send usage metrics and  ║
+2026-10-01T18:56:02.6841527Z   ║ crash reports to Google.                                                   ║
+2026-10-01T18:56:02.6842843Z   ║                                                                            ║
+2026-10-01T18:56:02.6844153Z   ║ Read about data we send with crash reports:                                ║
+2026-10-01T18:56:02.6845354Z   ║ https://flutter.dev/to/crash-reporting                                     ║
+2026-10-01T18:56:02.6846359Z   ║                                                                            ║
+2026-10-01T18:56:02.6847264Z   ║ See Google's privacy policy:                                               ║
+2026-10-01T18:56:02.6848331Z   ║ https://policies.google.com/privacy                                        ║
+2026-10-01T18:56:02.6849251Z   ║                                                                            ║
+2026-10-01T18:56:02.6850116Z   ║ To disable animations in this tool, use                                    ║
+2026-10-01T18:56:02.6851412Z   ║ 'flutter config --no-cli-animations'.                                      ║
+2026-10-01T18:56:02.6852468Z   ╚════════════════════════════════════════════════════════════════════════════╝
+2026-10-01T18:56:02.6853004Z 
+2026-10-01T18:56:07.6245028Z "gopica-app" is not a valid Dart package name.
+2026-10-01T18:56:07.6245479Z 
+2026-10-01T18:56:07.6248406Z The name should be all lowercase, with underscores to separate words, "just_like_this".Use only basic Latin letters and Arabic digits: [a-z0-9_].Also, make sure the name is a valid Dart identifier—that it doesn't start with digits and isn't a reserved word.
+2026-10-01T18:56:07.6250110Z See https://dart.dev/tools/pub/pubspec#name for more information.
+2026-10-01T18:56:07.6251091Z Try "gopica_app" instead.
+2026-10-01T18:56:07.6298394Z ##[error]Process completed with exit code 1.
+2026-10-01T18:56:07.6468683Z Post job cleanup.
+2026-10-01T18:56:07.6533474Z Post job cleanup.
+2026-10-01T18:56:07.7887805Z (node:2647) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-01T18:56:07.7888662Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-01T18:56:07.8130583Z Post job cleanup.
+2026-10-01T18:56:07.9052905Z [command]/usr/bin/git version
+2026-10-01T18:56:07.9099271Z git version 2.55.0
+2026-10-01T18:56:07.9144999Z Temporarily overriding HOME='/home/runner/work/_temp/1f819fb6-4867-4560-ade2-c5db262a3efe' before making global git config changes
+2026-10-01T18:56:07.9146410Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-01T18:56:07.9151679Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gopica-app/gopica-app
+2026-10-01T18:56:07.9194324Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-01T18:56:07.9232447Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-01T18:56:07.9491599Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-01T18:56:07.9521572Z http.https://github.com/.extraheader
+2026-10-01T18:56:07.9534555Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-01T18:56:07.9574051Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-01T18:56:07.9844513Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-01T18:56:07.9886333Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-01T18:56:08.0296282Z Cleaning up orphan processes
+2026-10-01T18:56:08.0599508Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

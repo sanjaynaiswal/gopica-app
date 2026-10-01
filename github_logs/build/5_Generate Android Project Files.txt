@@ -1,0 +1,46 @@
+﻿2026-10-01T18:56:02.2298462Z ##[group]Run flutter create --platforms android .
+2026-10-01T18:56:02.2298885Z [36;1mflutter create --platforms android .[0m
+2026-10-01T18:56:02.2299354Z [36;1mrm -rf test/[0m
+2026-10-01T18:56:02.2364534Z shell: /usr/bin/bash -e {0}
+2026-10-01T18:56:02.2364799Z env:
+2026-10-01T18:56:02.2365087Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:56:02.2365536Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:56:02.2365999Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.24.3-x64/flutter
+2026-10-01T18:56:02.2366395Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-01T18:56:02.2366662Z ##[endgroup]
+2026-10-01T18:56:02.6802850Z 
+2026-10-01T18:56:02.6817543Z   ╔════════════════════════════════════════════════════════════════════════════╗
+2026-10-01T18:56:02.6818913Z   ║                 Welcome to Flutter! - https://flutter.dev                  ║
+2026-10-01T18:56:02.6819845Z   ║                                                                            ║
+2026-10-01T18:56:02.6821288Z   ║ The Flutter tool uses Google Analytics to anonymously report feature usage ║
+2026-10-01T18:56:02.6822879Z   ║ statistics and basic crash reports. This data is used to help improve      ║
+2026-10-01T18:56:02.6824354Z   ║ Flutter tools over time.                                                   ║
+2026-10-01T18:56:02.6825695Z   ║                                                                            ║
+2026-10-01T18:56:02.6827028Z   ║ Flutter tool analytics are not sent on the very first run. To disable      ║
+2026-10-01T18:56:02.6828525Z   ║ reporting, type 'flutter config --no-analytics'. To display the current    ║
+2026-10-01T18:56:02.6830022Z   ║ setting, type 'flutter config'. If you opt out of analytics, an opt-out    ║
+2026-10-01T18:56:02.6831747Z   ║ event will be sent, and then no further information will be sent by the    ║
+2026-10-01T18:56:02.6833170Z   ║ Flutter tool.                                                              ║
+2026-10-01T18:56:02.6834280Z   ║                                                                            ║
+2026-10-01T18:56:02.6835669Z   ║ By downloading the Flutter SDK, you agree to the Google Terms of Service.  ║
+2026-10-01T18:56:02.6837126Z   ║ The Google Privacy Policy describes how data is handled in this service.   ║
+2026-10-01T18:56:02.6838496Z   ║                                                                            ║
+2026-10-01T18:56:02.6839802Z   ║ Moreover, Flutter includes the Dart SDK, which may send usage metrics and  ║
+2026-10-01T18:56:02.6841514Z   ║ crash reports to Google.                                                   ║
+2026-10-01T18:56:02.6842831Z   ║                                                                            ║
+2026-10-01T18:56:02.6844135Z   ║ Read about data we send with crash reports:                                ║
+2026-10-01T18:56:02.6845343Z   ║ https://flutter.dev/to/crash-reporting                                     ║
+2026-10-01T18:56:02.6846318Z   ║                                                                            ║
+2026-10-01T18:56:02.6847254Z   ║ See Google's privacy policy:                                               ║
+2026-10-01T18:56:02.6848321Z   ║ https://policies.google.com/privacy                                        ║
+2026-10-01T18:56:02.6849241Z   ║                                                                            ║
+2026-10-01T18:56:02.6850110Z   ║ To disable animations in this tool, use                                    ║
+2026-10-01T18:56:02.6851404Z   ║ 'flutter config --no-cli-animations'.                                      ║
+2026-10-01T18:56:02.6852462Z   ╚════════════════════════════════════════════════════════════════════════════╝
+2026-10-01T18:56:02.6852998Z 
+2026-10-01T18:56:07.6244982Z "gopica-app" is not a valid Dart package name.
+2026-10-01T18:56:07.6245474Z 
+2026-10-01T18:56:07.6247922Z The name should be all lowercase, with underscores to separate words, "just_like_this".Use only basic Latin letters and Arabic digits: [a-z0-9_].Also, make sure the name is a valid Dart identifier—that it doesn't start with digits and isn't a reserved word.
+2026-10-01T18:56:07.6250105Z See https://dart.dev/tools/pub/pubspec#name for more information.
+2026-10-01T18:56:07.6251080Z Try "gopica_app" instead.
+2026-10-01T18:56:07.6298381Z ##[error]Process completed with exit code 1.

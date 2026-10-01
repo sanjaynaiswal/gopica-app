@@ -1,0 +1,36 @@
+﻿2026-10-01T18:55:24.2683748Z ##[group]Run actions/setup-java@v4
+2026-10-01T18:55:24.2684977Z with:
+2026-10-01T18:55:24.2685857Z   distribution: zulu
+2026-10-01T18:55:24.2686842Z   java-version: 17
+2026-10-01T18:55:24.2687824Z   java-package: jdk
+2026-10-01T18:55:24.2688788Z   check-latest: false
+2026-10-01T18:55:24.2689774Z   server-id: github
+2026-10-01T18:55:24.2690982Z   server-username: GITHUB_ACTOR
+2026-10-01T18:55:24.2692157Z   server-password: GITHUB_TOKEN
+2026-10-01T18:55:24.2693316Z   overwrite-settings: true
+2026-10-01T18:55:24.2694406Z   job-status: success
+2026-10-01T18:55:24.2704398Z   token: ***
+2026-10-01T18:55:24.2705330Z ##[endgroup]
+2026-10-01T18:55:24.4471854Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-01T18:55:24.4491030Z ##[group]Installed distributions
+2026-10-01T18:55:24.4493278Z Trying to resolve the latest version from remote
+2026-10-01T18:55:24.4596213Z (node:2362) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-01T18:55:24.4601447Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-01T18:55:24.5252561Z Resolved latest version as 17.0.20+8
+2026-10-01T18:55:24.5254384Z Trying to download...
+2026-10-01T18:55:24.5256584Z Downloading Java 17.0.20+8 (Zulu) from https://cdn.azul.com/zulu/bin/zulu17.68.19-ca-crac-jdk17.0.20-linux_x64.tar.gz ...
+2026-10-01T18:55:28.8655324Z Extracting Java archive...
+2026-10-01T18:55:28.8803913Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/a1c4c190-cf15-4a41-b273-487e35a3102b -f /home/runner/work/_temp/782fb975-63a8-49f2-91ce-36bab6a62331
+2026-10-01T18:55:31.6661287Z Java 17.0.20+8 was downloaded
+2026-10-01T18:55:31.6662102Z Setting Java 17.0.20+8 as the default
+2026-10-01T18:55:31.6671237Z Creating toolchains.xml for JDK version 17 from zulu
+2026-10-01T18:55:31.6752239Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-01T18:55:31.6771452Z 
+2026-10-01T18:55:31.6771802Z Java configuration:
+2026-10-01T18:55:31.6772318Z   Distribution: zulu
+2026-10-01T18:55:31.6772821Z   Version: 17.0.20+8
+2026-10-01T18:55:31.6773370Z   Path: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.20-8/x64
+2026-10-01T18:55:31.6773835Z 
+2026-10-01T18:55:31.6774531Z ##[endgroup]
+2026-10-01T18:55:31.6796187Z Creating settings.xml with server-id: github
+2026-10-01T18:55:31.6796965Z Writing to /home/runner/.m2/settings.xml

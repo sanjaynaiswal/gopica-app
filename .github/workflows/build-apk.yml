@@ -28,7 +28,7 @@ jobs:
 
       - name: Generate Android Project Files
         run: |
-          flutter create --platforms android .
+          flutter create --project-name gopica_app --platforms android .
           rm -rf test/
 
       - name: Install Dependencies
